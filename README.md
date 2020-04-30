@@ -1,0 +1,2 @@
+# Website-Setup-for-Study-Abroad-Program
+This project is for designing a study-abroad website for an case study for the project management course in Kelley School of Business. The purpose of this project is to provide a visualized interface of the site based on the requirement of an study-abroad program. Actors/users of this site are not limited to potential students, the trip leads, other staffs in the study-abroad office. There are various events that can be executed on this site not limited to registering for trips, editing trip details, and adding new trip proposals. 
