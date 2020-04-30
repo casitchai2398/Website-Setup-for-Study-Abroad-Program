@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;}
+</style>
+<title>Assign Students</title>
+</head>
+<body>
+<h5><img src="largeiu.png" alt="IU logo" width="75">INDIANA UNIVERSITY</h5>
+<h1>Office of <b>International Studies<b/></h1>
+<nav>
+  <a href="oishome.html">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">COURSES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="returncourse.html">Returning Courses</a>
+      <a href="proposal.html">Course Proposals</a>
+      <a href="courseeval.html">Course Evaluations</a>
+    </div></div>
+	<div class="dropdown1">
+	<button class="dropbtn1">STUDENTS
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content1">
+  <a href="student_app.html">Student Applications</a>
+<a href="studentaddinfo.html">Additional Information</a>
+  <a href="StudentEval.html">Student Evaluations</a></div>
+  </div>
+  <div class="dropdown2">
+	<button class="dropbtn2">FACULTY
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content2">
+  <a href="tripitinerary.html">Trip Itinerary</a>
+  <a href="StaffEval.html">Staff Evaluations</a>
+  <a href="ActivityEval.html">Activity Evaluations</a></div>
+  </div>
+    <div class="dropdown3">
+	<button class="dropbtn3">DIRECTOR
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content3">
+  <a href="Course_Decision.html">Course Decisions</a>
+  <a href="Staff_Allocation.html">Staff Allocation</a>
+  <a href="TripReports.html">Trip Reports</a>
+  <a href="AssignStudents.html">Assign Students</a></div>
+  </div>
+</nav>
+
+    <h2>Assign Students</h2>
+    
+    <p>Pick a date to automatically assign students to trips; or click "View Now" to see the result.</p>
+    
+    <input type="date">
+    <input type="submit" value="Set Timer" onclick="SetTimer()";>
+    
+    <input type="submit" value="View Now" onclick="ViewNow()");>
+    <br>
+    <table id="myTable" width="100%">
+        <tr>
+            <th width=33%>First Name</th>
+            <th width=33%>Last Name</th>
+            <th width=33%>Trip</th>
+        </tr>
+        <tr>
+            <td>Casit</td>
+            <td>Chai</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Calyn</td>
+            <td>Tinklenberg</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Rumsha</td>
+            <td>Khan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fiona</td>
+            <td>Ng</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bohao</td>
+            <td>Lu</td>
+            <td></td>
+        </tr>
+        
+    </table>
+    
+    
+    
+    <script>
+function SetTimer(){
+    alert("Success! Students will be assigned at the set time.");
+}   
+        
+        
+function ViewNow() {
+    var firstname = document.getElementById("myTable").rows[1].cells;
+    firstname[2].innerHTML = "Japan";
+    var lastname = document.getElementById("myTable").rows[2].cells;
+    lastname[2].innerHTML = "Thailand";
+	var lastname = document.getElementById("myTable").rows[3].cells;
+    lastname[2].innerHTML = "Egypt";
+	var lastname = document.getElementById("myTable").rows[4].cells;
+    lastname[2].innerHTML = "Greece";
+	var lastname = document.getElementById("myTable").rows[5].cells;
+    lastname[2].innerHTML = "Switzerland";
+
+}
+        
+</script>  
+    
+    
+    
+</body>
+<footer><hr><img src="smalliu.png" alt="IU Logo">Copyright © 2019 The Trustees of Indiana University
+</footer>
+</html>

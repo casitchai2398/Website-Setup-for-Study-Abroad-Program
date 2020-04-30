@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brazil Course Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+	</style>
+</head>
+<body>
+<h5><img src="largeiu.png" alt="IU logo" width="75">INDIANA UNIVERSITY</h5>
+<h1>Office of <b>International Studies<b/></h1>
+<nav>
+  <a href="oishome.html">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">COURSES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="returncourse.html">Returning Courses</a>
+      <a href="proposal.html">Course Proposals</a>
+      <a href="courseeval.html">Course Evaluations</a>
+    </div></div>
+	<div class="dropdown1">
+	<button class="dropbtn1">STUDENTS
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content1">
+  <a href="student_app.html">Student Applications</a>
+<a href="studentaddinfo.html">Additional Information</a>
+  <a href="StudentEval.html">Student Evaluations</a></div>
+  </div>
+  <div class="dropdown2">
+	<button class="dropbtn2">FACULTY
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content2">
+  <a href="tripitinerary.html">Trip Itinerary</a>
+  <a href="StaffEval.html">Staff Evaluations</a>
+  <a href="ActivityEval.html">Activity Evaluations</a></div>
+  </div>
+    <div class="dropdown3">
+	<button class="dropbtn3">DIRECTOR
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content3">
+  <a href="Course_Decision.html">Course Decisions</a>
+  <a href="Staff_Allocation.html">Staff Allocation</a>
+  <a href="TripReports.html">Trip Reports</a>
+  <a href="AssignStudents.html">Assign Students</a></div>
+  </div>
+</nav>
+<h1>Brazil Proposal Information</h1>
+<img src="images/rio.jpg" title="Rio de Janiero" width="200">
+<form action="submission.html" method="POST">
+<form action="submission.html" method="POST">
+    
+   <div id="proposal">
+<p>Proposal: Brazil is an awesome country...</p></div>
+<p>Enter Evaluation:</p>
+        <textarea rows="10" cols="150" ></textarea>
+		<p>Enter Rating:</p>
+		<div id="rating">
+		<label for="rating_1">1 </label>
+        <input type="radio" name="rate" id="title_1" value="1">
+		<label for="rating_2">2 </label>
+        <input type="radio" name="rate" id="title_2" value="2"> 
+		<label for="rating_3">3 </label>
+        <input type="radio" name="rate" id="title_3" value="3"> 
+		<label for="rating_4">4 </label>
+        <input type="radio" name="rate" id="title_4" value="4"> 
+		<label for="rating_5">5 </label>
+        <input type="radio" name="rate" id="title_5" value="5">
+		</div>
+        
+    <input type="submit" value="Submit" onclick="EvaluateActivity()">
+    <script>
+function EvaluateActivity() {
+  alert("The evaluation is submitted.");
+}
+</script>
+<input type="button" value="Main Menu" button onclick="window.location.href = 'returncourse.html';">
+</body>
+<footer><hr><img src="smalliu.png" alt="IU Logo">Copyright © 2019 The Trustees of Indiana University
+</footer></html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trip Itinerary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h5>INDIANA UNIVERSITY</h5>
+<h1>Office of <b>International Studies<b/></h1>
+<nav>
+  <a href="oishome.html">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">COURSES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="returncourse.html">Returning Courses</a>
+      <a href="proposal.html">Course Proposals</a>
+      <a href="courseeval.html">Course Evaluations</a>
+    </div></div>
+	<div class="dropdown1">
+	<button class="dropbtn1">STUDENTS
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content1">
+  <a href="student_app.html">Student Applications</a>
+  <a href="#">Additional Information</a>
+  <a href="#">Student Evaluations</a></div>
+  </div>
+  <div class="dropdown2">
+	<button class="dropbtn2">FACULTY
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content2">
+  <a href="#">Trip Itinerary</a>
+  <a href="#">Staff Evaluations</a>
+  <a href="#">Activity Evaluations</a></div>
+  </div>
+    <div class="dropdown3">
+	<button class="dropbtn3">DIRECTOR
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content3">
+  <a href="#">Course Decisions</a>
+  <a href="#">Staff Allocation</a>
+  <a href="TripReports.html">Trip Reports</a>
+  <a href="AssignStudents.html">Assign Students</a></div>
+  </div>
+</nav>
+<h1>Trip Itinerary Information</h1>
+<p>Please enter information regarding your trip to create your trip itinerary</p>
+<form>
+<select onchange="location = this.options[this.selectedIndex].value;">
+  <option value="Select course">Select Trip</option>
+  <option value="#">China</option>
+  <option value="#">Pakistan</option>
+  <option value="#">Brazil</option>
+</select>
+<br>
+<br>
+  Dates:
+  <input type="date" name="dates" value="Send">
+  <br>
+  <br>
+  Sight Seeing:<br>
+  <input type="text" name="sight_seeing"><br>
+  Activities:<br>
+  <input type="text" name="activities"><br>
+  Food:<br>
+  <input type="text" name="food"><br>
+
+  <input type="submit" value="Submit" button onclick="FinalItinerary()">
+</form>
+    <script>
+function FinalItinerary() {
+  alert("You have successfully submitted your trip itinerary information. Get ready to have some fun!");
+}
+</script>  
+</body>
+<footer><hr><img src="smalliu.png" alt="IU Logo">Copyright © 2019 The Trustees of Indiana University
+</footer>
+</html>

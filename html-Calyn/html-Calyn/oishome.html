@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--jQuery CDN-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+        <!--Compiled and minified JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+<title>Office of International Studies</title>
+<style>
+#experience {background-color: #990000;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			}
+p {font-size: 128%;}
+h4 {text-align: center;}
+ul {text-align: center;
+	list-style-type: none;}
+a {text-decoration: none;
+	color: black;}
+a:hover {color: #990000;}
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+<div class="container">
+<h5><img src="largeiu.png" alt="IU logo" width="75">INDIANA UNIVERSITY</h5>
+<h1>Office of <b>International Studies<b/></h1>
+<nav>
+  <a href="oishome.html">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">COURSES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="returncourse.html">Returning Courses</a>
+      <a href="proposal.html">Course Proposals</a>
+      <a href="courseeval.html">Course Evaluations</a>
+    </div></div>
+	<div class="dropdown1">
+	<button class="dropbtn1">STUDENTS
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content1">
+  <a href="student_app.html">Student Applications</a>
+<a href="studentaddinfo.html">Additional Information</a>
+  <a href="StudentEval.html">Student Evaluations</a></div>
+  </div>
+  <div class="dropdown2">
+	<button class="dropbtn2">FACULTY
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content2">
+  <a href="tripitinerary.html">Trip Itinerary</a>
+  <a href="StaffEval.html">Staff Evaluations</a>
+  <a href="ActivityEval.html">Activity Evaluations</a></div>
+  </div>
+    <div class="dropdown3">
+	<button class="dropbtn3">DIRECTOR
+	 <i class="fa fa-caret-down"></i>
+    </button>
+	  <div class="dropdown-content3">
+  <a href="Course_Decision.html">Course Decisions</a>
+  <a href="Staff_Allocation.html">Staff Allocation</a>
+  <a href="TripReports.html">Trip Reports</a>
+  <a href="AssignStudents.html">Assign Students</a></div>
+  </div>
+</nav>
+<div class="w3-content w3-display-container">
+  <img class="img-responsive mySlides" src="images/shanghai.jpg" height="500" width="100%">
+  <img class="img-responsive mySlides" src="images/samplegates.jpg" height="500" width="100%">
+  <img class="img-responsive mySlides" src="images/amsterdam.jpg" height="500" width="100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+<div id="experience">
+<h1>Experience the university you always imagined</h1>
+<p>At Indiana University Bloomington, you will get a world-class education and join a welcoming community of people from around the world—all on one of the most beautiful campuses in the U.S.</p>
+
+<p>The Office of International Services (OIS) is here to guide you every step of the way.</p>
+</div>
+<h4 class="visually-hidden">Office of International Services social media channels</h4>
+<ul class="social">
+<a class="icon-twitter external" href="https://www.twitter.com/iu_ois" target="_blank"><img src="twitter.png" alt="Twitter" width="40px"></a></li>
+<a class="icon-facebook external" href="https://www.facebook.com/iu.ois" target="_blank"><img src="facebook.png" alt="Facebook" width="40px"></a></li>
+<a class="icon-instagram external" href="https://www.instagram.com/iu_ois" target="_blank"><img src="instagram.png" alt="Instagram" width="40px"></a></li>
+<a class="icon-youtube external" href="https://www.youtube.com/user/intlserv" target="_blank"><img src="youtube.png" alt="Youtube" width="40px"></a></li>
+</ul>
+</div>
+</body>
+<footer><hr><img src="smalliu.png" alt="IU Logo" width="25px"> Copyright © 2019 The Trustees of Indiana University
+</footer>
+</html>
